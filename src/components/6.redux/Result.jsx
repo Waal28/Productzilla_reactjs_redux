@@ -1,7 +1,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-const Result = (props) => {
+const Result = () => {
   const user = useSelector((state) => state.user);
 
   return (
