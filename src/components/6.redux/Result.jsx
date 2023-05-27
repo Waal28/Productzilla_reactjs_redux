@@ -1,12 +1,9 @@
-import React, { useState } from "react";
-import { useDispatch, useSelector } from "react-redux";
-import { increment } from "./store/counter";
+import React from "react";
+import { useSelector } from "react-redux";
 
-const FunctCounter = (props) => {
-  const count = useSelector((state) => state.counter.value);
+const Result = (props) => {
   const user = useSelector((state) => state.user);
 
-  const dispatch = useDispatch();
   return (
     <div>
       <h1>Selamat Datang {user.name}</h1>
@@ -27,4 +24,4 @@ const FunctCounter = (props) => {
   );
 };
 
-export default FunctCounter;
+export default Result;
